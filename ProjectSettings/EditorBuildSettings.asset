@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Svante Scene/GameScene.unity
+    guid: 699ff4f4c25b4f24f821e9fe84251b51
+  - enabled: 1
+    path: Assets/Scenes/Svante Scene/MainMenu.unity
+    guid: e575ac4d0d6049b48828e6d89c6f7246
+  - enabled: 1
+    path: Assets/Scenes/Svante Scene/PauseMenu.unity
+    guid: 95a9a1d213a610747b28516c65366340
+  - enabled: 1
+    path: Assets/Scenes/Svante Scene/Settings.unity
+    guid: 190536afba218c44fb222f92da594de2
+  - enabled: 1
     path: Assets/Scenes/Main Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
