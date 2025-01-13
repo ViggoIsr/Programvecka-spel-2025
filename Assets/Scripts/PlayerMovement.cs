@@ -32,11 +32,6 @@ public class PlayerMovement : MonoBehaviour
         currentMoveSpeed = initialMoveSpeed;
     }
 
-    void Start2()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
     void Update()
     {
         // kontrollera r�relse
