@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Svante Scene/GameScene.unity
+    guid: 794201be35ac13647b7d772d3d9cd9ea
+  - enabled: 0
     path: Assets/Scenes/SvanteScene(GameScene).unity
     guid: 699ff4f4c25b4f24f821e9fe84251b51
   - enabled: 1
