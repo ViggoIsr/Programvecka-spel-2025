@@ -18,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius = 0.3f;
     public LayerMask groundLayer;
 
+    [Header("Platform Interaction")]
+    public float platformCheckRadius = 0.2f;
+    public LayerMask platformLayer;
+
     private Rigidbody2D rb;
     public bool isGrounded { get; private set; }
     private float moveInput;
@@ -89,6 +93,31 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonUp("Jump"))
         {
             isJumping = false;
+        }
+
+        // Add this to handle platform dropping
+        if (Input.GetAxisRaw("Vertical") < 0)
+        {
+            StartCoroutine(DisableCollision());
+        }
+    }
+
+    private IEnumerator DisableCollision()
+    {
+        // Check if we're standing on a one-way platform
+        Collider2D[] platforms = Physics2D.OverlapCircleAll(groundCheck.position, platformCheckRadius, platformLayer);
+        
+        if (platforms.Length > 0)
+        {
+            foreach (Collider2D platform in platforms)
+            {
+                if (platform.GetComponent<PlatformEffector2D>() != null)
+                {
+                    Physics2D.IgnoreCollision(GetComponent<Collider2D>(), platform, true);
+                    yield return new WaitForSeconds(0.25f);
+                    Physics2D.IgnoreCollision(GetComponent<Collider2D>(), platform, false);
+                }
+            }
         }
     }
 
