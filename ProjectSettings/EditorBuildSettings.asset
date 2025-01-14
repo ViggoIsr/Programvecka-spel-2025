@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Berk Scene/Level 1 background.unity
     guid: 5b4d42e55708f834482f54208d98b68b
   - enabled: 1
-    path: Assets/Scenes/Berk Scene/MainMenu.unity
+    path: Assets/Scenes/Berk Scene/MainMenu1.unity
     guid: 728b48d4e93f9524e8a9d2fe9954d88d
+  - enabled: 1
+    path: Assets/Scenes/Berk Scene/PauseMenu1.unity
+    guid: 0f81ebd26b3045d44a1b074060ef3863
   m_configObjects: {}
