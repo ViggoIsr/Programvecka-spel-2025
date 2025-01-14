@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Key
   - Door
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
