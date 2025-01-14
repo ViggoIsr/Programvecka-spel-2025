@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Berk Scene/Level 1 background.unity
+    guid: 5b4d42e55708f834482f54208d98b68b
+  - enabled: 1
+    path: Assets/Scenes/Berk Scene/MainMenu.unity
+    guid: 728b48d4e93f9524e8a9d2fe9954d88d
   m_configObjects: {}
