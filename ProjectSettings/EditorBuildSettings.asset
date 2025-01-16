@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Berk Scene/MainMenu1.unity
     guid: 728b48d4e93f9524e8a9d2fe9954d88d
   - enabled: 1
+    path: Assets/Scenes/Berk Scene/Cutscene.unity
+    guid: a804942e2d2ca58488c4e3c7afc441c6
+  - enabled: 1
     path: Assets/Scenes/Berk Scene/Settings1.unity
     guid: 5535f734aaaea41458fd638a8d756e33
   - enabled: 1
