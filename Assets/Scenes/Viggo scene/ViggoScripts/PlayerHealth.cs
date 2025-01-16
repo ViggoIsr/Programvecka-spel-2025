@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 3; // Maximal hälsa
-    private int currentHealth; // Nuvarande hälsa
+    public int maxHealth = 3; 
+    private int currentHealth; 
 
-    public TextMeshProUGUI healthText; // Referens till TextMeshPro UI
+    public TextMeshProUGUI healthText;
 
     void Start()
     {
@@ -63,7 +63,12 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(1); // Minska hälsan med 1
+            TakeDamage(1); 
+        }
+
+        if (collision.gameObject.CompareTag("Evil"))
+        {
+            Die();
         }
     }
 
@@ -75,5 +80,6 @@ public class PlayerHealth : MonoBehaviour
             Destroy(collision.gameObject); // Ta bort hälsopickupen från scenen
         }
     }
+    
 }
 
