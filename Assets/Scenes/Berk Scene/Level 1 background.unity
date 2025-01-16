@@ -239,12 +239,11 @@ GameObject:
   - component: {fileID: 157146161}
   - component: {fileID: 157146160}
   - component: {fileID: 157146162}
-  - component: {fileID: 157146164}
   - component: {fileID: 157146163}
   - component: {fileID: 157146165}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,18 +429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinText: {fileID: 1943145909}
---- !u!114 &157146164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157146157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b7d560ea98754408f891542ef38f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &157146165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,6 +627,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &252005118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3218705861036253680, guid: a78fefbdd5b436347ae995c0dc371837, type: 3}
+  m_PrefabInstance: {fileID: 825767129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &262492546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 4036688589727966340, guid: a78fefbdd5b436347ae995c0dc371837, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4851025194284475149, guid: a78fefbdd5b436347ae995c0dc371837, type: 3}
       propertyPath: m_SortingOrder
       value: 6
@@ -2600,6 +2596,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key
       objectReference: {fileID: 0}
+    - target: {fileID: 5847814852706741636, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
+      propertyPath: m_TagString
+      value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449857121212758149, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8570326273531443067, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.997008
@@ -2647,7 +2651,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5847814852706741636, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1961808494}
   m_SourcePrefab: {fileID: 100100000, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
 --- !u!1 &1364968982
 GameObject:
@@ -4783,6 +4790,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943145907}
   m_CullTransparentMesh: 1
+--- !u!1 &1961808490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5847814852706741636, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
+  m_PrefabInstance: {fileID: 1319904346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961808494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961808490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1dbd25cb365ec44c9586d2ddaf37547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDoor: {fileID: 252005118}
 --- !u!1 &1970634714
 GameObject:
   m_ObjectHideFlags: 0
