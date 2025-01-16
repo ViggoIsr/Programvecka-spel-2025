@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Coin
   - HealthPickup
+  - Evil
   layers:
   - Default
   - TransparentFX
