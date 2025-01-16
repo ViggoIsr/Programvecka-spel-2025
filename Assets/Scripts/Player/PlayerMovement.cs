@@ -29,15 +29,22 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;
     private float jumpTimeCounter;
     private float jumpBufferCounter;
+    public Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         currentMoveSpeed = initialMoveSpeed;
     }
 
     void Update()
     {
+        animator.SetFloat("yVelocity", rb.velocity.y);
+        animator.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
+        animator.SetBool("isJumping", !isGrounded);
+
+
         // kontrollera r�relse
         moveInput = Input.GetAxis("Horizontal");
 
@@ -73,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
             jumpTimeCounter = maxJumpTime;
             rb.velocity = new Vector2(rb.velocity.x, initialJumpForce);
             jumpBufferCounter = 0;
+          
         }
 
         // continue jump while button is held
@@ -93,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonUp("Jump"))
         {
             isJumping = false;
+          
         }
 
         // Add this to handle platform dropping
