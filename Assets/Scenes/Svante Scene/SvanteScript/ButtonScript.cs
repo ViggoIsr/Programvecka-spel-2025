@@ -8,7 +8,7 @@ public class ButtonScript : MonoBehaviour
     // Method called when the button is clicked
     public void LoadTargetScene()
     {
-        SoundManager.Instance.PlaySound3D("MenuClick", transform.position);
+        
         if (!string.IsNullOrEmpty(targetScene))
         {
             SceneManager.LoadScene(targetScene);
