@@ -5,11 +5,9 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager Instance;
 
-    [SerializeField]
-    private MusicLibrary musicLibrary;
-    [SerializeField]
-    private AudioSource musicSource;
-
+    [SerializeField] private MusicLibrary musicLibrary;
+    [SerializeField] private AudioSource musicSource;
+     
     private void Awake()
     {
         if (Instance != null)
