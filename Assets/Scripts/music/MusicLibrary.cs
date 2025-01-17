@@ -9,7 +9,10 @@ public struct MusicTrack
 
 public class MusicLibrary : MonoBehaviour
 {
-    public MusicTrack[] tracks;
+    public delegate void SoundMouseClick();
+    public static event SoundMouseClick OnMouseClick;
+
+    [SerializeField] private MusicTrack[] tracks;
 
     public AudioClip GetClipFromName(string trackName)
     {

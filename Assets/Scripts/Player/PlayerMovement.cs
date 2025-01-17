@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        SoundManager.Instance.PlaySound3D("Running", transform.position);
         animator.SetFloat("yVelocity", rb.velocity.y);
         animator.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
         animator.SetBool("isJumping", !isGrounded);
