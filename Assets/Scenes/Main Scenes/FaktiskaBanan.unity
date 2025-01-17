@@ -1018,6 +1018,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3218705861036253680, guid: a78fefbdd5b436347ae995c0dc371837, type: 3}
   m_PrefabInstance: {fileID: 847433178}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &184196274 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4851025194284475149, guid: a78fefbdd5b436347ae995c0dc371837, type: 3}
+  m_PrefabInstance: {fileID: 847433178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &191582095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,8 +1224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986ad5769e6ee28449b5d0e009a1c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  moveDistance: 1
 --- !u!50 &200115629
 Rigidbody2D:
   serializedVersion: 4
@@ -2126,6 +2129,10 @@ PrefabInstance:
       propertyPath: targetDoor
       value: 
       objectReference: {fileID: 184196272}
+    - target: {fileID: -1894268824620090693, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
+      propertyPath: doorSpriteRenderer
+      value: 
+      objectReference: {fileID: 184196274}
     - target: {fileID: 5847814852706741636, guid: f17e01c01a89ce542a1cd40382e818ca, type: 3}
       propertyPath: m_Name
       value: Key (1)
