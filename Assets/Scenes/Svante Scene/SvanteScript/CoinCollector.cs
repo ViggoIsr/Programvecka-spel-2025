@@ -8,6 +8,7 @@ public class CoinCollector : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        SoundManager.Instance.PlaySound3D("CoinPickUp", transform.position);
         // Check if the collided object has the "Coin" tag
         if (collision.CompareTag("Coin"))
         {
