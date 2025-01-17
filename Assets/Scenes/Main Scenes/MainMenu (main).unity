@@ -1970,7 +1970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8a32741f38ad24398b7a4651f9c995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Level 1 background (main)
+  targetScene: FaktiskaBanan
 --- !u!114 &1887866031
 MonoBehaviour:
   m_ObjectHideFlags: 0
