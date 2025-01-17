@@ -60,7 +60,13 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(moveInput * currentMoveSpeed, rb.velocity.y);
 
-        // �r spelaren p� marken?
+        // Add this line to flip the sprite based on movement direction
+        if (moveInput != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(moveInput) * 2, 2, 1); // Using 2 since your current scale is 2
+        }
+
+        //r spelaren p marken?
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         // jump buffer handler
