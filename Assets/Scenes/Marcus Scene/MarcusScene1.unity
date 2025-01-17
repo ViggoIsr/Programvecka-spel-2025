@@ -173,6 +173,7 @@ MonoBehaviour:
   platformLayer:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 0}
 --- !u!50 &239665471
 Rigidbody2D:
   serializedVersion: 4
@@ -288,7 +289,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 88da70210ed439a429aa7c48844f879f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.9114286, y: 1.06}
