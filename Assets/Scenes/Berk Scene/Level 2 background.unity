@@ -1853,7 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicLibrary: {fileID: 566325797}
-  musicSource: {fileID: 0}
+  musicSource: {fileID: 1304686190}
 --- !u!114 &566325797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1867,18 +1867,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracks:
-  - trackName: CoinPickUp
-    clip: {fileID: 8300000, guid: 4e1c0feb3024c5a499e810bb1ee8fb80, type: 3}
-  - trackName: DamageTaken
-    clip: {fileID: 8300000, guid: b32619027e391964986d20b0d28182e2, type: 3}
-  - trackName: MenuClick
-    clip: {fileID: 8300000, guid: 7b980f2aa3cc8fa4084fd8b3252efb31, type: 3}
-  - trackName: Running
-    clip: {fileID: 8300000, guid: d2ea5d83b7e81e442aae79202e37a8bf, type: 3}
-  - trackName: KeyPickUp
-    clip: {fileID: 8300000, guid: ea494958a5915e04e8fd7d181f41985f, type: 3}
-  - trackName: GameOver
-    clip: {fileID: 8300000, guid: 008aefd3efeaed64c87631d1daf88c8e, type: 3}
+  - trackName: MainMenuMusic
+    clip: {fileID: 8300000, guid: 663950e7e2a1edf47a712a0a5011dcff, type: 3}
+  - trackName: LevelOneMusic
+    clip: {fileID: 8300000, guid: 781a84f67875e3043b0e995d90a9b14f, type: 3}
+  - trackName: LevelTwoMusic
+    clip: {fileID: 8300000, guid: 08e005b0d10373b4dac4642bf389635a, type: 3}
 --- !u!114 &566325798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1892,7 +1886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxLibrary: {fileID: 566325799}
-  sfx2DSource: {fileID: 0}
+  sfx2DSource: {fileID: 1018450889}
 --- !u!114 &566325799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1905,7 +1899,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d7463702c0f96428d8b33ead68cb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEffects: []
+  SoundEffects:
+  - groupID: CoinPickUp
+    clips:
+    - {fileID: 8300000, guid: 4e1c0feb3024c5a499e810bb1ee8fb80, type: 3}
+  - groupID: DamageTaken
+    clips:
+    - {fileID: 8300000, guid: b32619027e391964986d20b0d28182e2, type: 3}
+  - groupID: MenuClick
+    clips:
+    - {fileID: 8300000, guid: 7b980f2aa3cc8fa4084fd8b3252efb31, type: 3}
+  - groupID: Running
+    clips:
+    - {fileID: 8300000, guid: d2ea5d83b7e81e442aae79202e37a8bf, type: 3}
+  - groupID: KeyPickUp
+    clips:
+    - {fileID: 8300000, guid: ea494958a5915e04e8fd7d181f41985f, type: 3}
+  - groupID: GameOver
+    clips:
+    - {fileID: 8300000, guid: 008aefd3efeaed64c87631d1daf88c8e, type: 3}
 --- !u!4 &566325800
 Transform:
   m_ObjectHideFlags: 0

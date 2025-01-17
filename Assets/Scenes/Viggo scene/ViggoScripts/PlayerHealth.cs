@@ -27,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        SoundManager.Instance.PlaySound3D("DamageTaken", transform.position);
         currentHealth -= damage; // Minska hälsan
         UpdateHealthText(); // Uppdatera UI
 

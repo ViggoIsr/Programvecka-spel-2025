@@ -7,6 +7,7 @@ public class KeyPickupHandler2D : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        SoundManager.Instance.PlaySound3D("KeyPickUp", transform.position);
         // Check if the object collided with is tagged as "Key"
         if (other.CompareTag("Key"))
         {
