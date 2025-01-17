@@ -8351,12 +8351,20 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7722343346260175074, guid: 4532881bda006014892cb27174d000fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722343346260175074, guid: 4532881bda006014892cb27174d000fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722343346260175074, guid: 4532881bda006014892cb27174d000fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.91
       objectReference: {fileID: 0}
     - target: {fileID: 7722343346260175074, guid: 4532881bda006014892cb27174d000fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 7722343346260175074, guid: 4532881bda006014892cb27174d000fe, type: 3}
       propertyPath: m_LocalPosition.z
