@@ -1853,7 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicLibrary: {fileID: 566325797}
-  musicSource: {fileID: 0}
+  musicSource: {fileID: 1304686190}
 --- !u!114 &566325797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,7 +1866,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7f4c1d61055d44483a8304d2c0faf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracks: []
+  tracks:
+  - trackName: MainMenuMusic
+    clip: {fileID: 8300000, guid: 663950e7e2a1edf47a712a0a5011dcff, type: 3}
+  - trackName: LevelOneMusic
+    clip: {fileID: 8300000, guid: 781a84f67875e3043b0e995d90a9b14f, type: 3}
+  - trackName: LevelTwoMusic
+    clip: {fileID: 8300000, guid: 08e005b0d10373b4dac4642bf389635a, type: 3}
 --- !u!114 &566325798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,7 +1886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxLibrary: {fileID: 566325799}
-  sfx2DSource: {fileID: 0}
+  sfx2DSource: {fileID: 1018450889}
 --- !u!114 &566325799
 MonoBehaviour:
   m_ObjectHideFlags: 0
