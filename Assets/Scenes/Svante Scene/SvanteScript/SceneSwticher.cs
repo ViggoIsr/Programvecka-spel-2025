@@ -19,6 +19,6 @@ public class SceneSwitcher : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         // Load the MainMenu1 scene
-        SceneManager.LoadScene("MainMenu1");
+        SceneManager.LoadScene("MainMenu (main)");
     }
 }

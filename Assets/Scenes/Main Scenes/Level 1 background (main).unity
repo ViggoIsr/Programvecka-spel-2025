@@ -416,6 +416,7 @@ MonoBehaviour:
   platformLayer:
     serializedVersion: 2
     m_Bits: 0
+  animator: {fileID: 0}
 --- !u!114 &157146163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4382,7 +4383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c71bb7187f0b34290ec972bf9a5be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuScene: PauseMenu1
+  pauseMenuScene: PauseMenu (main)
 --- !u!4 &1814325309
 Transform:
   m_ObjectHideFlags: 0
