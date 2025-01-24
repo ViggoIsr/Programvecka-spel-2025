@@ -3,12 +3,11 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     // Reference to the specific door this key will unlock
-    [SerializeField]
-    private GameObject targetDoor;
+    [SerializeField] private GameObject targetDoor;
 
-    // New sprite to be assigned to the door when the key is picked up
-    [SerializeField]
-    private Sprite newDoorSprite;
+    // References to door sprites that can be set in the inspector
+    [SerializeField] private Sprite lockedDoorSprite;
+    [SerializeField] private Sprite unlockedDoorSprite;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,49 +17,46 @@ public class Key : MonoBehaviour
             // Attempt to unlock the door if it exists
             if (targetDoor != null)
             {
-                // Get the BoxCollider2D of the door and disable it
+                // Get the required components
                 BoxCollider2D doorCollider = targetDoor.GetComponent<BoxCollider2D>();
-                if (doorCollider != null)
-                {
-                    doorCollider.enabled = false;
-                    Debug.Log("Door unlocked!");
+                SpriteRenderer doorSprite = targetDoor.GetComponent<SpriteRenderer>();
 
-                    // Change the door's sprite
-                    ChangeDoorSprite();
+                if (doorCollider != null && doorSprite != null)
+                {
+                    // Disable the collider
+                    doorCollider.enabled = false;
+
+                    // Change the door sprite to unlocked
+                    if (unlockedDoorSprite != null)
+                    {
+                        doorSprite.sprite = unlockedDoorSprite;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Unlocked door sprite not assigned!");
+                    }
+
+                    Debug.Log("Door unlocked!");
 
                     // Destroy the key after unlocking the door
                     Destroy(gameObject);
                 }
                 else
                 {
-                    Debug.LogWarning("The target door does not have a BoxCollider2D!");
+                    if (doorCollider == null)
+                    {
+                        Debug.LogWarning("The target door does not have a BoxCollider2D!");
+                    }
+                    if (doorSprite == null)
+                    {
+                        Debug.LogWarning("The target door does not have a SpriteRenderer!");
+                    }
                 }
             }
             else
             {
                 Debug.LogWarning("No door assigned to this key!");
             }
-        }
-    }
-
-    private void ChangeDoorSprite()
-    {
-        if (newDoorSprite != null)
-        {
-            SpriteRenderer doorSpriteRenderer = targetDoor.GetComponent<SpriteRenderer>();
-            if (doorSpriteRenderer != null)
-            {
-                doorSpriteRenderer.sprite = newDoorSprite;
-                Debug.Log("Door sprite changed!");
-            }
-            else
-            {
-                Debug.LogWarning("The target door does not have a SpriteRenderer component!");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("No new sprite assigned for the door!");
         }
     }
 }
