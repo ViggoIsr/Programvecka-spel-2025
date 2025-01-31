@@ -524,8 +524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1479266279}
-  mainMenuMusic: {fileID: 8300000, guid: 663950e7e2a1edf47a712a0a5011dcff, type: 3}
-  gameMusic: {fileID: 8300000, guid: 781a84f67875e3043b0e995d90a9b14f, type: 3}
+  mainMenuMusic: {fileID: 8300000, guid: 781a84f67875e3043b0e995d90a9b14f, type: 3}
+  gameMusic: {fileID: 8300000, guid: 663950e7e2a1edf47a712a0a5011dcff, type: 3}
 --- !u!4 &468800278
 Transform:
   m_ObjectHideFlags: 0
