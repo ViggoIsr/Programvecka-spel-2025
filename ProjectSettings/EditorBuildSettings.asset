@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scenes/Terms and Conditions.unity
     guid: 97b3d07e743266841a2a3cfe854b7ab3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Scenes/FaktiskaBanan.unity
     guid: 7637a52e760aae546bcbff47c080bd6a
   - enabled: 1
@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main Scenes/MainMenu1 (main).unity
     guid: 627fa76503238a84b946afe3a6897343
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/Backup shirr.unity
+    guid: c18dd88b62807fe4a8aab8df94f41edd
   m_configObjects: {}

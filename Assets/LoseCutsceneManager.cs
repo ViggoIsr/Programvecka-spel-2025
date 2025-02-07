@@ -15,6 +15,6 @@ public class LoseCutsceneManager : MonoBehaviour
 
     void LoadGameScene()
     {
-        SceneManager.LoadScene("FaktiskaBanan");
+        SceneManager.LoadScene("Backup shirr");
     }
 }
