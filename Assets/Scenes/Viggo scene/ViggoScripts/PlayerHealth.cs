@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 3; 
-    private int currentHealth; 
+    public int maxHealth = 3;
+    private int currentHealth;
 
     public TextMeshProUGUI healthText;
 
@@ -27,7 +27,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        
         currentHealth -= damage; // Minska hälsan
         UpdateHealthText(); // Uppdatera UI
 
@@ -50,21 +49,23 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player is dead!");
+        
         gameObject.SetActive(false);
-        Invoke(nameof(RestartScene), 2f); // Starta om scenen efter 2 sekunder
+        PlayerPrefs.SetInt("PlayerDied", 1); // Spara att spelaren dog
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("LoseCutscene"); // Ladda dödsscenen
     }
 
     void RestartScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("FaktiskaBanan"); // Ladda om spelet
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(1); 
+            TakeDamage(1);
         }
 
         if (collision.gameObject.CompareTag("Evil"))
@@ -81,6 +82,4 @@ public class PlayerHealth : MonoBehaviour
             Destroy(collision.gameObject); // Ta bort hälsopickupen från scenen
         }
     }
-    
 }
-
