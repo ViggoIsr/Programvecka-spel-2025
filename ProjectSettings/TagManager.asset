@@ -10,6 +10,7 @@ TagManager:
   - Coin
   - HealthPickup
   - Evil
+  - TriggerZone
   layers:
   - Default
   - TransparentFX

@@ -35,4 +35,6 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f; // Resume the game by restoring time
         SceneManager.UnloadSceneAsync(pauseMenuScene);
     }
+
+
 }
